@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    height: 5vw;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    gap: 2.5vw;
+}
+nav h4{
+    font-weight: 550;
+}
+nav i{
+    margin-right: 3vw ;
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    padding: 0.6vw;
+    border-radius: 50%;
+    font-weight: 500;
+}
+#center{
+    padding: 3vw 4vw;
+}
+#center h1{
+    font-size: 4.4vw;
+    font-weight: 500;
+    line-height: 5vw;
+}
+#center-in{
+    padding: 2vw 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p{
+    font-size: 1.3vw;
+    line-height: 2vw;
+    font-weight: 550;
+}
+#right{
+    width: 20%;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8vw;
+    margin: 0.4vw;
+    border-top: 2px solid black;
+}
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight: 550;
+}
+.elem i{
+    font-size: 2vw;
+    opacity: 0;
+}
+.elem:hover i{
+    opacity: 1;
+}
+#bottom{
+    height: 40%;
+    width: 100%;
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1604307945912-5d1b484f5ae5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 23%;
+}
+@media (max-width:600px) {
+    nav{
+        height: 12vw;
+        gap: 4vw;
+    }
+    nav h4{
+        font-size: 5vw;
+    }
+    nav i{
+        margin-right: 7vw ;
+        font-size: 5vw;
+        padding: 2vw;
+    }
+    #center{
+        width: 100%;
+        padding: 5vw 4vw;
+    }
+    #center h1{
+        padding-left: 1.5vw;
+        font-size: 10vw;
+        font-weight: 500;
+        line-height: 12vw;
+    }
+    #center-in{
+        padding: 3vw 2vw 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #center-in p{
+        padding:  0 1.5vw;
+        font-size: 3vw;
+        line-height: 4vw;
+        font-weight: 550;
+    }
+    #right{
+        margin-top: 6vw ;
+        width: 100%;
+    }
+    .elem{
+        padding: 1vw;
+        margin: 2vw;
+    }
+    .elem a{
+        font-size: 3.8vw;
+    }
+    .elem i{
+        font-size: 5vw;
+        opacity: 1;
+    }
+}
+
